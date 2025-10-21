@@ -60,35 +60,5 @@ Each shipment should have:
 
 
 
-\## Tasks for Students
-
-1\. Implement the \*\*Shipment class\*\* (ID, status, history).
-
-2\. Implement the \*\*Tracker class\*\* (manage multiple shipments).
-
-3\. Build a menu in `main.py` to:
-
-&nbsp;  - Add shipments
-
-&nbsp;  - Update statuses
-
-&nbsp;  - View history
-
-&nbsp;  - Generate reports
-
-4\. Use `utils.py` for ID generation.
-
-5\. Add error handling with custom exceptions.
-
-
-
-\## Extended Scope : If students are able to complete then they can write the other below:
-
-\- Export reports to a file (`report.py`)
-
-\- Load and save data in JSON format
-
-\- Validate status (only allow: "Created", "Dispatched", "In Transit", "Delivered")
-
 
 
