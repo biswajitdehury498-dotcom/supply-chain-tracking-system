@@ -1,64 +1,17 @@
-# Supply Chain Tracking System
-
-
-
-supply\_chain\_tracking/
-
-│── main.py               # Entry point (menu-driven program)
-
-│── shipment.py           # Shipment class
-
-│── tracker.py            # Tracker class to manage multiple shipments
-
-│── report.py             # Reporting and history
-
-│── exceptions.py         # Custom exceptions
-
-│── utils.py              # Helper utilities
-
-│── data/                 
-
-│   └── sample\_data.json  # Optional dataset
-
-│── README.md             # Project details + instructions
-
-
-
-
-
-\## Domain
-
-Logistics \& Supply Chain
-
-
-
-\## Problem Statement
-
-Create a system to track shipments across supply chain stages.  
-
-Each shipment should have:
-
-\- A unique ID
-
-\- Current status
-
-\- History of updates
-
-
-
-\## Learning Goals
-
-\- Understand object-oriented programming (OOP)
-
-\- Work with multiple classes (`Shipment`, `Tracker`)
-
-\- Implement history tracking with timestamps
-
-\- Practice file handling \& reporting
-
-\- Handle custom exceptions
-
-
-
-
-
+Supply Chain Tracking SystemA Python-based system designed to model and track the movement and status of shipments across various stages of a supply chain. This project utilizes Object-Oriented Programming (OOP) principles to manage multiple shipments, track historical updates, and generate reports. FeaturesShipment Tracking: Track individual shipments with a unique ID and current status.History Logging: Maintain a chronological history of all status updates for each shipment, including timestamps.Centralized Management: A Tracker class to manage a collection of multiple Shipment objects.Menu-Driven Interface: An easy-to-use console menu (main.py) for adding, updating, and viewing shipments.Robust Error Handling: Implements custom exceptions for better error management.Data Persistence (Extended Scope): Load and save all shipment data using JSON format.Reporting: Functionality to generate and export reports to a file. Project StructureThe project is organized into modular Python files, each responsible for a specific part of the system:supply_chain_tracking/
+│
+├── main.py               # Entry point (menu-driven application menu)
+├── shipment.py           # Defines the Shipment class (ID, status, history)
+├── tracker.py            # Defines the Tracker class (manages all shipments)
+├── report.py             # Reporting and export functionality
+├── exceptions.py         # Custom exceptions for error handling
+├── utils.py              # Helper utilities (e.g., ID generation, timestamping)
+│
+├── data/                 
+│   └── sample_data.json  # Optional dataset for loading/saving data
+│
+└── README.md             # Project details and instructions (this file)
+Getting StartedPrerequisitesPython 3.6+Installation and RunningClone the Repository:Bashgit clone https://github.com/YOUR_USERNAME/supply-chain-tracker.git
+cd supply-chain-tracker
+Run the Application:The system is started via the main entry point.Bashpython main.py
+Follow the on-screen menu prompts (1-5) to interact with the system (Add Shipment, Update Status, View History, etc.). Domain Details & Status ValidationKey Classes and ResponsibilitiesClassLocationCore ResponsibilitiesShipmentshipment.pyStores shipment data (ID, status). Handles the logic for updating its history with timestamps.Trackertracker.pyManages the collection (e.g., a dictionary) of Shipment objects. Handles adding, updating, and retrieving shipments.Allowed Shipment StatusesTo maintain data integrity (part of the extended scope), the system validates that all status updates are one of the following official stages:CreatedDispatchedIn TransitDelivered Learning Goals & TasksThis project serves as an excellent practical application of core Python and software engineering concepts.Primary Learning GoalsUnderstand and implement Object-Oriented Programming (OOP) principles.Work with multiple interdependent classes (Shipment, Tracker).Implement history tracking with timestamps.Practice file handling and reporting.Handle errors gracefully using custom exceptions.Student Tasks (Implementation Checklist) Implement the Shipment class (ID, status, history list). Implement the Tracker class to manage a dictionary of Shipment objects. Build the menu-driven interface in main.py (Add, Update, View, Report). Integrate ID generation from utils.py. Implement error handling with custom exceptions from exceptions.py.Extended Scope Tasks (Optional) Export reports to a file using report.py. Load and save data in JSON format. Validate status updates against the allowed list.
